@@ -16,7 +16,7 @@ const routes = [
 
 
     return (
-        <nav className="bg-blue-100 text-black p-4">
+        <nav className="bg-blue-100 text-black p-0">
             <div className="md:hidden text-2xl" onClick={()=> setOpen(!open)}>
                 {
                 open ? <AiOutlineClose></AiOutlineClose>
@@ -25,7 +25,7 @@ const routes = [
             </div>
             <ul className={`
              ${open ? "top-14" : "-top-56"}
-            md:flex bg-blue-100 text-blue-700 cursor-pointer p-6 absolute rounded-
+            md:flex bg-blue-100 text-blue-700 cursor-pointer p-6 absolute md:static rounded-
             transition-all duration-500 ease-in-out
 
             `}>
